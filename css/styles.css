@@ -408,10 +408,11 @@ img {
   width: 358px;
   height: 50px;
   margin-right: 12px;
-border: 1px solid rgba(255, 255, 255, 0.3);
-box-sizing: border-box;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 .footer-form-input:not(:placeholder-shown) {
   color: var(--white-color);
@@ -434,6 +435,11 @@ border-radius: 4px;
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--color-active-button);
 }
 .button-icon {
   margin-left: 10px;
@@ -568,6 +574,10 @@ color: var(--text-color);
   width: 528px;
   height: 581px;
   background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+  0px 1px 1px rgba(0, 0, 0, 0.14), 
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -586,7 +596,7 @@ color: var(--text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   cursor: pointer;
-  padding: 0;
+  padding: 0; 
 }
 .close-modal:hover, .close-modal:focus
 {
@@ -611,6 +621,7 @@ color: var(--text-color);
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--text-color);
+  margin-bottom: 4px;
  }
  .modal-form-input {
    display: block;
@@ -628,6 +639,7 @@ color: var(--text-color);
  .modal-form-container { 
   position: relative;
   margin-bottom: 10px;
+
  }
  .modal-form-icons {
   position: absolute;
@@ -704,6 +716,7 @@ color: var(--active-link);
 background-color: var(--color-active-button);}
 
 .checkbox-container {
+  padding-left: 14px;
   margin-bottom: 30px;
 }
 .checkbox-label {
